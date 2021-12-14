@@ -3,7 +3,7 @@
 <TITLE>Comentários</TITLE>
 </HEAD>
 <BODY>
-<h2>Comentários Enviados pelos Usuários</h3>
+<h2>Comentários</h3>
 <?php
 $link=mysql_connect("localhost",'julio','4567');
 $banco=mysql_select_db("bdcomentarios");
