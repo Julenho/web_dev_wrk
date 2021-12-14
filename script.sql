@@ -1,0 +1,8 @@
+CREATE TABLE tbcomentarios (
+id int(5) NOT NULL AUTO_INCREMENT,
+nome VARCHAR(30) NOT NULL, 
+email VARCHAR(30) NOT NULL,
+pagina VARCHAR(30) NOT NULL,
+comentario VARCHAR(255) NOT NULL,
+PRIMARY KEY(id) 
+);
