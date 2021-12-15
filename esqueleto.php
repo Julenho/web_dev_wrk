@@ -9,7 +9,7 @@ $link=mysql_connect("localhost",'julio','4567');
 $banco=mysql_select_db("bdcomentarios");
 ?>
 
-<form name="form" method="post" action="#">
+<form name="form" method="post" action="arquivo.php">
     Nome:
     <input type=text name=nome>
     <br><br>E-Mail:
@@ -23,7 +23,7 @@ $banco=mysql_select_db("bdcomentarios");
 <hr>
 
 <?php
-
+############################
 $nome=$_POST['nome'];
 $email=$_POST['email'];
 $comentario=$_POST['comentario'];
@@ -34,6 +34,9 @@ if(strlen($_POST['nome'])) #insere somente se no form foi escrito o nome
     $insert = mysql_query("INSERT INTO tbcomentarios(nome,email,pagina,comentario) 
     values('$nome','$email','$pagina','$comentario')");
 }
+    ###########
+    
+    
 $sql = "SELECT * FROM tbcomentarios WHERE pagina='dango' ORDER BY id desc";
 $executar=mysql_query($sql);
 while( $exibir = mysql_fetch_array($executar)){
