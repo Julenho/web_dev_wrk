@@ -51,7 +51,7 @@
 
                                 if ($list->num_rows > 0) {
                                         while($row = $list->fetch_assoc()) {
-                                        echo "Usuário: " . $row["nome"] . "<br>" . "Email: " . $row["email"]. "<br>" . "Comentário: "  . $row["comenta>
+                                        echo "Usuário: " . $row["nome"] . "<br>" . "Email: " . $row["email"]. "<br>" . "Comentário: "  . $row["comentario"]. "<br><hr>";
                                         }
                                 } else {
                                          echo "Seja o primeiro a comentar!";
