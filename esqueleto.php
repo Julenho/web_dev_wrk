@@ -6,7 +6,7 @@
 <h2>Comentários</h3>
 <?php
 $link=mysql_connect("localhost",'julio','4567');
-$banco=mysql_select_db("bdcomentarios");
+$banco=mysql_select_db("comentarios");
 ?>
 
 <form name="form" method="post" action="arquivo.php">
